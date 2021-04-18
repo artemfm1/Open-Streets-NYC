@@ -25,12 +25,11 @@ https://data.cityofnewyork.us/resource/uiay-nctu.json
 ### MVP/PostMVP
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-MVP - To be able to search for "Open Street" locations by borough.
+MVP - To be able to search for "Open Street" locations by boroughwhen accessing API data from NYC open source
+
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 - Adding a date and calander option 
 - Giving the user a map readout or a link to it
