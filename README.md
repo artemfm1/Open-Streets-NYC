@@ -1,47 +1,41 @@
-# Open-Streets-NYC
-An application used for finding street openings for pedestrians and cyclists to use the roadbed of the street for social distancing during the COVID-19 crisis.
-
-
 # Project Overview
 
+
 ## Project Name
+
+# Open-Streets-NYC
 
 The name of your project with deployed URL.
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+An application used for finding street openings for pedestrians and cyclists to use the roadbed of the street for social distancing during the COVID-19 crisis.
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+https://data.cityofnewyork.us/resource/uiay-nctu.json
+
+![image](https://user-images.githubusercontent.com/46007121/115155156-9a342780-a04c-11eb-8677-9b0e74bea4d8.png)
+
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![image](https://user-images.githubusercontent.com/46007121/115155509-4296bb80-a04e-11eb-9211-3f999801fb43.png)
 
 ### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+MVP - To be able to search for "Open Street" locations by borough.
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Adding a date and calander option 
+- Giving the user a map readout or a link to it
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -65,19 +59,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Working with API | H | 2hrs|  |  
+| HTML | H | 1.5hrs|  |  
+| JavaScript | H | 3.5hrs|  |  
+| CSS | H | 3hrs|  |  
+| Total | H | 10hrs|  |  
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+
+
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes. 
+
