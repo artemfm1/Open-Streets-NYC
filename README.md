@@ -26,7 +26,11 @@ https://data.cityofnewyork.us/resource/uiay-nctu.json
 
 #### MVP 
 
-MVP - To be able to search for "Open Street" locations by boroughwhen accessing API data from NYC open source
+MVP - To be able to search for "Open Street" locations by borough. This project used:
+  - HTML, CSS, and JavaScript.
+  - Axios request to pull API data
+  - styleing with FLexblox
+  - responsive design with media queries
 
 
 #### PostMVP  
@@ -57,10 +61,12 @@ MVP - To be able to search for "Open Street" locations by boroughwhen accessing 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Working with API | H | 2hrs|  |  
-| HTML | H | 1.5hrs|  |  
-| JavaScript | H | 3.5hrs|  |  
-| CSS | H | 3hrs|  |  
-| Total | H | 10hrs|  |  
+| HTML | H | 2 hrs|  |  
+| JavaScript | H | 10 hrs|  |  
+| initaial CSS | H | 5 hrs|  |  
+| advanced CSS styling | H | 6 hrs|  |  
+| debugging | H | 5 hrs|  |
+| Total | H | 30 hrs|  |  
 
 ## Code Snippet
 
