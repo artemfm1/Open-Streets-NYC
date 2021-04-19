@@ -43,11 +43,10 @@ MVP - To be able to search for "Open Street" locations by borough. This project 
 |  Day | Deliverable | Status
 |---|---| ---|
 |April 16-18| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|April 19| Project Approval | /Core Application Structure (HTML, CSS, etc.)
-|April 20|  | Incomplete
+|April 19| Project Approval/Core Application Structure (HTML, CSS, etc.) | 
 |April 20| Pseudocode / actual code | Incomplete
-|April 21| Initial Clickable Model  | Incomplete
-|April 22| MVP | Incomplete
+|April 21| Initial Clickable Model/MVP  | Incomplete
+|April 22| MVP/PMVP | Incomplete
 |April 23| Presentations | Incomplete
 
 ## Priority Matrix
