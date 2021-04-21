@@ -33,18 +33,22 @@ async function findOpenStreet(location) {
     })
     console.log(area)
     console.log(area[0].from_stree)
-    const streetData = area.map(() => {
-      (street) => {
-        street.from_stree
-      }
+    const streetData = area.map((street) => {
+      return street.from_stree
     })
+    
+    console.log(area[0].to_street)
+    const crossStreet = area.map((street) => {
+      return street.to_street
+      })
+    
 console.log(streetData)
 
     const boroughContainer = document.querySelector("#borough-name") 
     const boroughPtag = document.createElement("p")
     boroughContainer.appendChild(boroughPtag)
-  
-  }
+    boroughPtag.innerHTML = `${streetData}`
+}
 
   // function renderOpenStreet(data) {
     
