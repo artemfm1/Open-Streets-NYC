@@ -16,7 +16,10 @@ async function findOpenStreet(location) {
   try {
     const response = await axios.get(url)
     console.log(response.data)
+    //const streetData = response.data
+    
     displayBorough(response.data)
+    console.log(filterdStreetData)
     // function displayOpenStreet(response) {
       // return response
     // }
@@ -33,23 +36,34 @@ async function findOpenStreet(location) {
     })
     console.log(area)
     console.log(area[0].from_stree)
-    const streetData = new Set( area.map((street) => {
-      return [street.from_stree,street.to_street]
+    const streetData = ( area.map((street) => {
+      return [street.from_stree, " "+ street.to_street]
     }))
-    
-    //console.log(area[0].to_street)
+    const smallArray = streetData.slice(0, 30)
+    console.log(smallArray)
+    //console.log(streetData)
+    const filterdStreetData = smallArray.filter((val, index, val2) => {
+      return val2.indexOf(val) == index
+    })
+    console.log(filterdStreetData)
+    console.log(area[0].to_street)
     const crossStreet = area.map((street) => {
       //return street.to_street
       })
     
     
-    console.log(streetData)
+    //console.log(streetData)
     //console.log(crossStreet)
 
     const boroughContainer = document.querySelector("#borough-name") 
-    const boroughPtag = document.createElement("p")
-    boroughContainer.appendChild(boroughPtag)
-    boroughPtag.innerHTML = `${streetData}`
+    
+    for (let i = 0; i < smallArray.length; i++){
+      const boroughPtag = document.createElement("p")
+      boroughContainer.appendChild(boroughPtag)
+      boroughPtag.innerHTML = `${smallArray[i]}`
+      i++
+    }
+    
 }
 
   // function renderOpenStreet(data) {
