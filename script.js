@@ -29,17 +29,34 @@ async function findOpenStreet(location) {
   function displayBorough(data) {
     let location = document.querySelector('#borough').value
     let area = data.filter(city => {
-      return "n" === city.borough.toLowerCase()
+      return "queens" === city.borough.toLowerCase()
     })
     console.log(area)
+    console.log(area[0].from_stree)
+    const streetData = area.map(() => {
+      (street) => {
+        street.from_stree
+      }
+    })
+console.log(streetData)
+
+    const boroughContainer = document.querySelector("#borough-name") 
+    const boroughPtag = document.createElement("p")
+    boroughContainer.appendChild(boroughPtag)
+  
   }
 
+  // function renderOpenStreet(data) {
+    
+  //   const location = document.createElement("open-streets")
+  //   locationDiv.appendChild(location)
+  //   //document.getElementById("#borough-name").innerHTML = location
+  //   }
 
 
 
 
 
-
-
+  
 findOpenStreet()
-
+// renderOpenStreet()
