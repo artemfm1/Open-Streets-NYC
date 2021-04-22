@@ -1,20 +1,26 @@
 body{
-  background-color: lightblue;
+  background-color: #f1f1f1;
 }
 
-
+h1{
+  color: #009DDC;
+}
 
 
 .blur{
 display: flex;
 justify-content: center;
-border: 3px:solid;
+border: 3px solid #009DDC;
 
+}
+
+img {
+  width: 10%;
+  height: auto;
 }
 
 @media all and (min-width: 500px){
   body{
-  background-color: beige
-
+  background-color: rgb(86, 97, 101)
   }
 }

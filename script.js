@@ -61,7 +61,8 @@ function displayBorough(data) {
     //console.log(crossStreet)
 
   const boroughContainer = document.querySelector("#borough-name")
-    
+  boroughContainer.innerHTML = ""
+  document.querySelector('#streets-search').value = ""
     for (let i = 0; i < uniqueArray.length; i++) {
       const boroughPtag = document.createElement("p")
       boroughContainer.appendChild(boroughPtag)
