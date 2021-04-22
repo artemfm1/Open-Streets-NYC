@@ -1,4 +1,4 @@
-const url = "https://data.cityofnewyork.us/resource/uiay-nctu.json"
+//const url = "https://data.cityofnewyork.us/resource/uiay-nctu.json"
 // axios.get(url)
 //     .then((res) => {
 //       for (let i = 0; i < res.data.length; i++)
@@ -11,15 +11,16 @@ const url = "https://data.cityofnewyork.us/resource/uiay-nctu.json"
 
 
 
-async function findOpenStreet(location) {
+async function findOpenStreet() {
   const url = "https://data.cityofnewyork.us/resource/uiay-nctu.json"
   try {
     const response = await axios.get(url)
+    //console.log(response)
     console.log(response.data)
     //const streetData = response.data
-    
+    //removeOpenStreets()
     displayBorough(response.data)
-    console.log(filterdStreetData)
+    //console.log(filterdStreetData)
     // function displayOpenStreet(response) {
       // return response
     // }
@@ -28,43 +29,41 @@ async function findOpenStreet(location) {
     console.error(error)
   }
 }
-  
-  function displayBorough(data) {
-    let location = document.querySelector('#borough').value
+findOpenStreet() 
+function displayBorough(data) {
+  const location = document.querySelector('input').value
+  // if (location == "") {
+  // return null
+  // }
+  // else {
     let area = data.filter(city => {
-      return "queens" === city.borough.toLowerCase()
+      return location === city.borough.toLowerCase()
+      
     })
     console.log(area)
-    console.log(area[0].from_stree)
-    const streetData = ( area.map((street) => {
-      return [street.from_stree, " "+ street.to_street]
+    const streetData = (area.map((street) => {
+      return [street.from_stree, " " + street.to_street]
     }))
     const smallArray = streetData.slice(0, 30)
     console.log(smallArray)
-    //console.log(streetData)
-    const filterdStreetData = smallArray.filter((val, index, val2) => {
-      return val2.indexOf(val) == index
-    })
-    console.log(filterdStreetData)
-    console.log(area[0].to_street)
-    const crossStreet = area.map((street) => {
+    // const filterdStreetData = smallArray.filter((val, index, val2) => {
+    // val2.indexOf(val) == index
+    // })
+    // console.log(filterdStreetData)
+    //const crossStreet = area.map((street) => {
       //return street.to_street
-      })
-    
+    //})
     
     //console.log(streetData)
     //console.log(crossStreet)
 
-    const boroughContainer = document.querySelector("#borough-name") 
+  const boroughContainer = document.querySelector("#borough-name")
     
-    for (let i = 0; i < smallArray.length; i++){
+    for (let i = 0; i < smallArray.length; i++) {
       const boroughPtag = document.createElement("p")
       boroughContainer.appendChild(boroughPtag)
       boroughPtag.innerHTML = `${smallArray[i]}`
-      i++
-    }
-    
-}
+  }
 
   // function renderOpenStreet(data) {
     
@@ -73,10 +72,18 @@ async function findOpenStreet(location) {
   //   //document.getElementById("#borough-name").innerHTML = location
   //   }
 
+}
 
+// function removeOpenStreets() {
+//   const boroughContainer = document.querySelector('#borough-name')
+//   while (boroughContainer.lastChild) {
+//     boroughContainer.removeChild(boroughContainer.lastChild)
+//   }
+// }
+  const searchButton = document.querySelector('#get-streets')
+console.log(searchButton)
+searchButton.addEventListener('click', (e) => {
+  e.preventDefault()
+  displayBorough
+})
 
-
-
-  
-findOpenStreet()
-// renderOpenStreet()
