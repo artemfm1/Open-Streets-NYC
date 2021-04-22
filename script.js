@@ -29,7 +29,7 @@ async function findOpenStreet() {
     console.error(error)
   }
 }
-findOpenStreet() 
+
 function displayBorough(data) {
   const location = document.querySelector('input').value
   // if (location == "") {
@@ -42,10 +42,13 @@ function displayBorough(data) {
     })
     console.log(area)
     const streetData = (area.map((street) => {
-      return [street.from_stree, " " + street.to_street]
+      return `${street.from_stree} ${street.to_street}`
     }))
-    const smallArray = streetData.slice(0, 30)
-    console.log(smallArray)
+   // const smallArray = streetData.slice(0, 50)
+  console.log(streetData)
+  const filteredArray = new Set(streetData)
+  const uniqueArray = Array.from(filteredArray)
+  console.log(uniqueArray)
     // const filterdStreetData = smallArray.filter((val, index, val2) => {
     // val2.indexOf(val) == index
     // })
@@ -59,10 +62,10 @@ function displayBorough(data) {
 
   const boroughContainer = document.querySelector("#borough-name")
     
-    for (let i = 0; i < smallArray.length; i++) {
+    for (let i = 0; i < uniqueArray.length; i++) {
       const boroughPtag = document.createElement("p")
       boroughContainer.appendChild(boroughPtag)
-      boroughPtag.innerHTML = `${smallArray[i]}`
+      boroughPtag.innerHTML = `${uniqueArray[i]}`
   }
 
   // function renderOpenStreet(data) {
@@ -79,11 +82,17 @@ function displayBorough(data) {
 //   while (boroughContainer.lastChild) {
 //     boroughContainer.removeChild(boroughContainer.lastChild)
 //   }
-// }
+// const removeElement = document.querySelector('#borough-name')
+//   while (removeElement.lastChild) {
+//     removeElement.removeChild(removeElement.removeChild.lastChild)
+
+
+
+//}
   const searchButton = document.querySelector('#get-streets')
 console.log(searchButton)
 searchButton.addEventListener('click', (e) => {
   e.preventDefault()
-  displayBorough
+  findOpenStreet()
 })
 

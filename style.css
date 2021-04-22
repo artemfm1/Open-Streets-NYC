@@ -3,13 +3,18 @@ body{
 }
 
 
-@media all and (max-width: 500px){
-  background-color{
-    color: beige
-  }
-}
+
 
 .blur{
 display: flex;
 justify-content: center;
+border: 3px:solid;
+
+}
+
+@media all and (min-width: 500px){
+  body{
+  background-color: beige
+
+  }
 }
