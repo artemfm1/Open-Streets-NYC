@@ -1,95 +1,47 @@
-//const url = "https://data.cityofnewyork.us/resource/uiay-nctu.json"
-// axios.get(url)
-//     .then((res) => {
-//       for (let i = 0; i < res.data.length; i++)
-//         console.log(res.data[i])
-//     })
-//     .catch((error) => {
-//       console.error(error)
-//     })
 
-
-
+//=========AXIOS request=========//
 
 async function findOpenStreet() {
   const url = "https://data.cityofnewyork.us/resource/uiay-nctu.json"
   try {
     const response = await axios.get(url)
-    //console.log(response)
-    console.log(response.data)
-    //const streetData = response.data
-    //removeOpenStreets()
     displayBorough(response.data)
-    //console.log(filterdStreetData)
-    // function displayOpenStreet(response) {
-      // return response
-    // }
   }
   catch (error) {
     console.error(error)
   }
 }
-
+//==========Filtering the data==========//
 function displayBorough(data) {
   const location = document.querySelector('input').value
-  // if (location == "") {
-  // return null
-  // }
-  // else {
     let area = data.filter(city => {
       return location === city.borough.toLowerCase()
-      
     })
     console.log(area)
     const streetData = (area.map((street) => {
       return `${street.from_stree} ${street.to_street}`
     }))
-   // const smallArray = streetData.slice(0, 50)
-  console.log(streetData)
+  
+  //=== filtering for unique values===//
   const filteredArray = new Set(streetData)
   const uniqueArray = Array.from(filteredArray)
-  console.log(uniqueArray)
-    // const filterdStreetData = smallArray.filter((val, index, val2) => {
-    // val2.indexOf(val) == index
-    // })
-    // console.log(filterdStreetData)
-    //const crossStreet = area.map((street) => {
-      //return street.to_street
-    //})
-    
-    //console.log(streetData)
-    //console.log(crossStreet)
-
   const boroughContainer = document.querySelector("#borough-name")
+  
+  //clearing the rendered data
   boroughContainer.innerHTML = ""
   document.querySelector('#streets-search').value = ""
+
+    //looping through the data & appending 
     for (let i = 0; i < uniqueArray.length; i++) {
       const boroughPtag = document.createElement("p")
       boroughContainer.appendChild(boroughPtag)
       boroughPtag.innerHTML = `${uniqueArray[i]}`
   }
 
-  // function renderOpenStreet(data) {
-    
-  //   const location = document.createElement("open-streets")
-  //   locationDiv.appendChild(location)
-  //   //document.getElementById("#borough-name").innerHTML = location
-  //   }
+
 
 }
-
-// function removeOpenStreets() {
-//   const boroughContainer = document.querySelector('#borough-name')
-//   while (boroughContainer.lastChild) {
-//     boroughContainer.removeChild(boroughContainer.lastChild)
-//   }
-// const removeElement = document.querySelector('#borough-name')
-//   while (removeElement.lastChild) {
-//     removeElement.removeChild(removeElement.removeChild.lastChild)
-
-
-
-//}
+// Event listener to run the function//
   const searchButton = document.querySelector('#get-streets')
 console.log(searchButton)
 searchButton.addEventListener('click', (e) => {
