@@ -1,12 +1,11 @@
 # Project Overview
-deployed site:
-https://artemfm1.github.io/Open-Streets-NYC/
+
 
 ## Project Name
 
 # Open-Streets-NYC
 
-The name of your project with deployed URL.
+https://artemfm1.github.io/Open-Streets-NYC/
 
 ## Project Description
 
