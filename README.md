@@ -75,4 +75,4 @@ MVP - To be able to search for "Open Street" locations by borough. This project 
 
 
 ## Change Log
-
+Intially I had to use `const smallArray = streetData.slice(0, 30)` to shorten the results, but using the set() method allowed me to filter out duplicates and render a complete list to the user. 
