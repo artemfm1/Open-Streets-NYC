@@ -4,14 +4,15 @@ body{
 
 h1{
   color: #009DDC;
+  font-family: 'Heebo', sans-serif;
 }
 
 
 .blur{
 display: flex;
 justify-content: center;
-border: 3px solid #009DDC;
-
+border: 1px thin #009DDC;
+font-family: 'Nanum Gothic', sans-serif;
 }
 
 img {
@@ -19,8 +20,12 @@ img {
   height: auto;
 }
 
-@media all and (min-width: 500px){
+@media all and (max-width: 500px){
   body{
-  background-color: rgb(86, 97, 101)
+  background-color: #d1d1d1
+  }
+  img{
+    display: flex;
+    flex-direction: row;
   }
 }
