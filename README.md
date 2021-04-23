@@ -59,13 +59,13 @@ MVP - To be able to search for "Open Street" locations by borough. This project 
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Working with API | H | 2hrs|  |  
-| HTML | H | 2 hrs|  |  
-| JavaScript | H | 10 hrs|  |  
-| initaial CSS | H | 5 hrs|  |  
-| advanced CSS styling | H | 6 hrs|  |  
-| debugging | H | 5 hrs|  |
-| Total | H | 30 hrs|  |  
+| Working with API | H | 2hrs| 2 |  2
+| HTML | H | 2 hrs| 6 |  6
+| JavaScript | H | 10 hrs| 20 |  20
+| initaial CSS | H | 5 hrs| 3 |  3
+| advanced CSS styling | H | 6 hrs| 8 | 8 
+| debugging | H | 5 hrs| 3 | 3
+| Total | H | 30 hrs|  |  42
 
 ## Code Snippet
 
