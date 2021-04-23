@@ -51,7 +51,8 @@ MVP - To be able to search for "Open Street" locations by borough. This project 
 
 ## Priority Matrix
 
-![image](https://user-images.githubusercontent.com/46007121/115160689-96fa6500-a067-11eb-8798-e508e2742e0c.png)
+![image](https://user-images.githubusercontent.com/46007121/115883241-95d88780-a41b-11eb-8323-4c71fec857aa.png)
+
 
 ## Timeframes
 
@@ -59,19 +60,20 @@ MVP - To be able to search for "Open Street" locations by borough. This project 
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Working with API | H | 2hrs|  |  
-| HTML | H | 2 hrs|  |  
-| JavaScript | H | 10 hrs|  |  
-| initaial CSS | H | 5 hrs|  |  
-| advanced CSS styling | H | 6 hrs|  |  
-| debugging | H | 5 hrs|  |
-| Total | H | 30 hrs|  |  
+| Working with API | H | 2hrs| 2 |  2
+| HTML | H | 2 hrs| 6 |  6
+| JavaScript | H | 10 hrs| 20 |  20
+| initaial CSS | H | 5 hrs| 3 |  3
+| advanced CSS styling | H | 6 hrs| 8 | 8 
+| debugging | H | 5 hrs| 3 | 3
+| Total | H | 30 hrs| 42 |  42
 
 ## Code Snippet
 
+![image](https://user-images.githubusercontent.com/46007121/115876506-66724c80-a414-11eb-9af5-ff4dfacb800a.png)
 
 
 
 
 ## Change Log
-
+Intially I had to use `const smallArray = streetData.slice(0, 30)` to shorten the results, but using the set() method allowed me to filter out duplicates and render a complete list to the user. 
