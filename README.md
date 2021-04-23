@@ -65,10 +65,11 @@ MVP - To be able to search for "Open Street" locations by borough. This project 
 | initaial CSS | H | 5 hrs| 3 |  3
 | advanced CSS styling | H | 6 hrs| 8 | 8 
 | debugging | H | 5 hrs| 3 | 3
-| Total | H | 30 hrs|  |  42
+| Total | H | 30 hrs| 42 |  42
 
 ## Code Snippet
 
+![image](https://user-images.githubusercontent.com/46007121/115876506-66724c80-a414-11eb-9af5-ff4dfacb800a.png)
 
 
 
